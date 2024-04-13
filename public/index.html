@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Classifier</title>
+</head>
+<body>
+    <h1>Animal Classifier</h1>
+    <form id="animalForm" enctype="multipart/form-data">
+        <label for="imageUpload">Upload an image:</label>
+        <input type="file" id="imageUpload" name="imageUpload" accept="image/*" capture="environment">
+        <button type="submit">Predict</button>
+    </form>
+    <div id="predictionBox">
+        <p id="predictionResult"></p>
+        <!-- Image element for displaying the uploaded picture -->
+        <img id="uploadedImage" src="" alt="Uploaded Image" style="display:none; max-width:300px; height:auto;">
+        <div id="loading" style="display:none;">Processing...</div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

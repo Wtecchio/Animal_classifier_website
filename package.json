@@ -1,0 +1,25 @@
+{
+  "name": "animal_classifier_website",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1"
+  },
+  "description": "To install dependencies:",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
