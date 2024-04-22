@@ -4,21 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animal Classifier</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Animal Classifier</h1>
-    <form id="animalForm" enctype="multipart/form-data">
-        <label for="imageUpload">Upload an image:</label>
-        <input type="file" id="imageUpload" name="imageUpload" accept="image/*" capture="environment">
-        <button type="submit">Predict</button>
-    </form>
-    <div id="predictionBox">
-        <p id="predictionResult"></p>
-        <!-- Image element for displaying the uploaded picture -->
-        <img id="uploadedImage" src="" alt="Uploaded Image" style="display:none; max-width:300px; height:auto;">
-        <div id="loading" style="display:none;">Processing...</div>
+    <div class="logo-container">
+        <img src="./assets/ucf_knight_no_background_final-removebg.png" alt="Noble Golden Knight" class="knight-logo">
     </div>
-
+    <div class="container">
+        <h1>Animal Classifier</h1>
+        <div class="description-box">
+            <h2>What is Animal Classifier?</h2>
+            <p>This AI-powered tool uses machine learning to identify animals in pictures. Simply upload an image, and the model will predict which of the 10 animals it contains. Our model currently recognizes the following animals: butterfly, cat, chicken, cow, dog, elephant, horse, sheep, spider, and squirrel.</p>
+        </div>
+        <form id="animalForm" enctype="multipart/form-data">
+            <label for="imageUpload">Upload an image:</label>
+            <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
+            <button type="submit">Predict</button>
+        </form>
+        <div id="predictionBox">
+            <p id="predictionResult"></p>
+            <img id="uploadedImage" src="" alt="Uploaded Image">
+            <div id="loading">Processing...</div>
+        </div>
+    </div>
     <script src="/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0;
+    padding: 20px;
+    background-color: #f7f7f7;
+    color: #212121;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px; /* Adjust the width of the container */
+    margin: 20px; /* Add margin around the container */
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #ffc904; /* UCF Gold */
+    background: linear-gradient(to right, #000000, #ffc904); /* Gradient from black to gold */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+input[type="file"]:hover,
+input[type="file"]:focus {
+    border-color: #ffc904;
+}
+
+button {
+    background: linear-gradient(to right, #000000, #333333); /* Gradient effect for button */
+    color: #ffc904;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: linear-gradient(to right, #333333, #000000); /* Inverted gradient on hover */
+}
+
+#predictionBox {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#uploadedImage {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+#loading {
+    font-style: italic;
+    visibility: hidden;
+}
+
+.logo-container {
+    align-self: flex-end; /* Align logo to the right */
+    position: absolute; /* Maintain the absolute positioning */
+    right: 20px; /* Keep the right spacing */
+    top: 20px; /* Keep the top spacing */
+}
+
+.knight-logo {
+    width: 150px; /* 50% larger than the original 100px width */
+    height: auto; /* Maintain the aspect ratio of the logo */
+}
+
+.description-box {
+    background-color: #fff; /* White background to match the form */
+    padding: 15px;
+    margin-bottom: 20px; /* Space before the upload form */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333; /* Dark text for readability */
+    max-width: 600px; /* Match the width of the form */
+    margin: 20px auto; /* Center the box */
+}
+
+.description-box h2 {
+    color: #5a3ec8; /* A color that matches your UCF theme */
+    margin-bottom: 10px;
+}
+
+.description-box p {
+    font-size: 16px; /* A readable font size */
+    line-height: 1.6; /* Spacing for readability */
+}

@@ -173,3 +173,28 @@ dist
 
 # Finder (MacOS) folder config
 .DS_Store
+
+# Dependency directories
+node_modules/
+
+# Environment files
+.env
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Build or compiled files
+dist/
+build/
+
+# Other files or directories specific to your project
+public/uploads/
+visitor-actions-log.json
