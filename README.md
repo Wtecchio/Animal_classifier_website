@@ -69,7 +69,7 @@ The animal classification model used in this project is pre-trained and stored i
 
 ## Contributing
 
-If you want to contribute to this project, that's awesome! Feel free to open an issue or submit a pull request if you have any ideas or find any bugs. Just make sure to keep things friendly and follow the project's code of conduct.
+If you want to contribute to this project, that's awesome! Feel free to open an issue or submit a pull request if you have any ideas or find any bugs.
 
 ## Contact
 
